@@ -34,3 +34,8 @@ $('img').css('display', 'none').fadeIn(1600);
 $('.card').on('click', function() {
 	$(this).toggleClass('selected');
 });
+
+//rm feature
+$('div').on('click', function() {
+	$('#one').empty();
+	$('#two').remove();
