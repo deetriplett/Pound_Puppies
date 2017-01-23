@@ -31,7 +31,7 @@ $('#add-pet').on('click', function() {
 //Make X rm section 
 $('.close').on('click', function() {
 	$(this).parent().remove();
-	
+//	
 //Reset form 
 $name.val("");
 $species.val("Dog");
