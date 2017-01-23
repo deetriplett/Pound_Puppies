@@ -1,7 +1,7 @@
 //List Items (puppies)
-$('li').on('click', function() {
-	$(this).text("Clicked!").delay(800).fadeOut(400);
-});
+//$('li').on('click', function() {
+//	$(this).text("Clicked!").delay(800).fadeOut(400);
+//});
 
 $('.loc').hover(,/strong>
   function(){
@@ -28,4 +28,9 @@ $('#add-pet').on('click', function() {
 	$('#posted-pets').append($newPet);
 });	
 
+//Img fade in - elements must be hidden in the first place
+$('img').css('display', 'none').fadeIn(1600);
 
+$('.card').on('click', function() {
+	$(this).toggleClass('selected');
+});
