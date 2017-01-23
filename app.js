@@ -28,6 +28,15 @@ $('#add-pet').on('click', function() {
 	$('#posted-pets').append($newPet);
 });	
 
+//Make X rm section 
+$('.close').on('click', function() {
+	$(this).parent().remove();
+	
+//Reset form 
+$name.val("");
+$species.val("Dog");
+$notes.val("");
+
 //Img fade in - elements must be hidden in the first place
 $('img').css('display', 'none').fadeIn(1600);
 
